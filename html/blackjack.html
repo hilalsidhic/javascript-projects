@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/blackjack.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="border border-gray-700 mx-72 ">
+            <div class="flex justify-center py-4 bg-gray-400">
+                <h1 class="text-5xl">BLACK</h1><h2 class="text-6xl">J</h2><h1 class="text-5xl">ACK</h1><br><span class="text-green-800" >lets play</span>
+            </div>
+            <div class="flex justify-center">
+                <h2 class="text-3xl" id="blackjack_result"></h2>
+            </div>
+            <div class="bg-poker">
+              <div class="flex  h-96 text-2xl text-gray-50">
+                <div id="user-blackjack" class="w-1/2 pt-2 border border-gray-900 text-center items-start flex flex-wrap justify-center image_blackjack">
+                       
+                    <div id="" class="w-full h-10">
+                        USER:<span id="user-score">0</span>
+                    </div>
+                </div>
+                <div id="dealer-blackjack" class="w-1/2 pt-2 border border-gray-900 text-center items-start flex flex-wrap justify-center image_blackjack">
+                <div id="" class="w-full h-10">
+                    DEALER:<span id="dealer-score">0</span>
+                </div>
+                </div>
+              </div>
+              <div class="flex justify-center p-2 font-semibold text-xl">
+                  <button id="hit_button" class="rounded-lg mx-2 bg-blue-600 p-2 px-4 border-solid text-white border-blue-600 hover:bg-blue-300 outline-none">Hit</button>
+                  <button id="stand_button" class="rounded-lg mx-2 bg-yellow-600 p-2 px-4 border-solid text-black border-yellow-600 hover:bg-yellow-300 outline-none">Stand</button>
+                  <button id="deal_button" class="rounded-lg mx-2 bg-red-600 p-2 px-4 border-solid text-white border-red-600 hover:bg-red-300 outline-none">Deal</button>
+              </div>
+           </div>
+           <div class="flex justify-center p-4">
+                 <table class="table-auto border-collapse border-4 border-green-900">
+                     <thead>
+                         <tr>
+                          <th class="border-4 border-green-900"> Wins </th>
+                          <th class="border-4 border-green-900">Losses</th>
+                          <th class="border-4 border-green-900">Draw</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                         <tr>
+                             <td class="border-4 border-green-900 text-center" id="win-count">0</td>
+                             <td class="border-4 border-green-900 text-center" id="loss-count">0</td>
+                             <td class="border-4 border-green-900 text-center" id="draw-count">0</td>
+                         </tr>
+                        
+                     </tbody>  
+                 </table>
+           </div>
+        </div>
+    </div>
+ <script src="../static/js/blackjack.js"></script>   
+</body>
+</html>

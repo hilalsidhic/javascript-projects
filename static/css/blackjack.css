@@ -1,0 +1,10 @@
+.bg-poker{
+    background: url("https://t3.ftcdn.net/jpg/01/04/28/34/240_F_104283429_F1sNVmmFCvtqtULRH1ALt26dNBI9MdwS.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image_blackjack img{
+ 
+    width: 30%;
+    justify-content: space-around;
+}

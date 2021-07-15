@@ -1,0 +1,15 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "tailwindcss": "^2.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build-css": "tailwindcss build -i style.css -o static/css/styles.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

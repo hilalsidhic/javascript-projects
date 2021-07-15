@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="border-2 justify-center mt-36 border-gray-900 m-48">
+            <div>
+                <h1 class="text-5xl my-6 flex justify-center font-extrabold font">Challenge-3</h1>
+            </div>
+            <div class=" border-t-2 py-4 italic">
+                <h3 class="flex justify-center  text-4xl">Rock,Paper,Scissor</h3>
+                <div class="flex justify-end" id="score">
+                    <div class="rounded-lg p-2 mr-2 bg-green-400 text-white">
+                        WON: <span id='won'></span><br>
+                        LOST: <span id="lost"></span><br>
+                        DRAW: <span id="draw"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap border-t-2 justify-around" id="questbox">
+                <input type="image" onclick="humanchoice(id)" id="rock" class="rps" src="http://www.clker.com/cliparts/p/G/a/s/t/g/rock-md.png" alt="Rock">
+                <input type="image" onclick="humanchoice(id)" id="paper" class="rps" src="http://www.clker.com/cliparts/Y/t/o/V/q/F/paper-md.png" alt="Paper">
+                <input type="image" onclick="humanchoice(id)" id="scissor" class="rps" src="http://www.clker.com/cliparts/8/B/i/M/Y/Z/scissors-md.png" alt="Scissor">
+            </div>
+            <div class=" flex-wrap border-t-2 justify-around py-14 hidden" id="resultbox">
+
+            </div>
+            <div class="justify-center hidden" id="trybtn"> 
+                <button onclick="tryagain()" class="rounded-lg px-3 py-1 my-2 bg-green-500 text-white hover:bg-green-800 duration-500">TRY AGAIN</button>
+            </div>
+        </div>
+    </div>
+    <script src="../static/js/rps.js"></script>
+
+</body>
+</html>
